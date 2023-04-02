@@ -1,0 +1,104 @@
+html {
+  background: url('./Img/Charly.jpg') no-repeat center center fixed; 
+  background-size: cover; 
+}
+
+body {
+  /*background-color: brown;*/
+  margin-top: 80px;    
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  
+}
+main {
+  color: rgb(4, 4, 26);
+  height: 500px;
+  margin: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: normal;
+    background-color: rgb(59, 0, 0);
+    color: rgb(12, 12, 12);
+    border-radius: 30px;    
+    z-index: 1;
+}
+
+p {
+  font: 1em sans-serif;
+  text-decoration-color: black;
+}
+
+.form{
+  position: fixed;
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 50%; 
+  z-index: 2;
+}
+
+#miUL {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+#miUL li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#miUL li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: black;
+    color: rgba(87, 66, 66, 0.88);
+}
+
+img {
+
+  box-shadow: 5px 5px 10px black;
+  max-width: 80%; 
+  width: 500px;
+  height: 300px;
+  display: block;
+}
+
+.imagenes{
+  position: static;
+}
+
+
+#imagen-rotativa {
+  width: 500px;
+  height: 300px;/* Largo y ancho del lugar que tendran las imagenes*/
+  position: relative ;
+}
+
+#imagen-rotativa img { 
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+}
+
+#imagen-rotativa img:first-child {
+  opacity: 1;
+}
